@@ -1,0 +1,9 @@
+.image-wrapper{
+	display: none;
+}
+.canvas-wrapper{
+	position: relative;
+}
+.slider-wrapper input[type="range"]{
+	width: 400px;
+}
