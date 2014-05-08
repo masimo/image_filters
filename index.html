@@ -7,17 +7,26 @@
 	    <script src="./lib/jquery-1.11.1.js"></script>
 	</head>
 	<body>
+	<form name="Upload" action="#" enctype="multipart/form-data" method="post">
+	   <p>Filename: <INPUT type="file" name="submitfile" id = "submitfile" />
+	   <INPUT type="button" value="Send" onClick="checkSize();" />
+   </form>
 	<div class="image-wrapper">
-		<img id="image-1" src="./img/lonerider2.jpg" alt="">
+
 	</div>
 	<div class="canvas-wrapper">
-		<canvas id="canvas-1" width="800" height="600"></canvas>
+		<canvas id="canvas-1"></canvas>
 	</div>
 	<div class="slider-wrapper">
-		<input type="range" id="range-1" value="0" >
+		<input type="range" id="range-1" value="0" ><br>
+		<input type="range" id="range-2" value="0" max="200" ><br>
+		<input type="range" id="range-3" value="0" max="10" >
 	</div>
 
-	<button type="button" id="applyNoise">add Noise</button>
+	<button type="button" id="applyLight">add Light</button>
+	<button type="button" id="doSomeStaff">Apply</button>
+	<button type="button" id="resetBtn">Reset!</button>
+	
 
 	<script src="./js/ready.js"></script>
 	</body>
